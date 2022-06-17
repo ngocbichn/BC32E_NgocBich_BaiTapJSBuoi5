@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Bai Tap JS Buoi 5</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container" style="margin-bottom: 100px;">
+        <!-- BÀI 1: QUẢN LÝ TUYỂN SINH -->
+        <div class="card w-30 bg-info text-white mt-4">
+            <div class="card-header">
+                <h1>BÀI 1: Quản lý tuyển sinh</h1>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-4 form-group">
+                        <h4>Điểm chuẩn</h4>
+                        <select class="form-control" id="diemChuan">
+                            <option value="30">30</option>
+                            <option value="27">27</option>
+                            <option value="25">25</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4 form-group">
+                        <h4>Chọn khu vực</h4>
+                        <select class="form-control" id="khuVuc">
+                            <option value="0">Không thuộc khu vực ưu tiên</option>
+                            <option value="2">Khu vực A</option>
+                            <option value="1">Khu vực B</option>
+                            <option value="0.5">Khu vực C</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4 form-group">
+                        <h4>Chọn đối tượng</h4>
+                        <select class="form-control" id="doiTuong">
+                            <option value="0">Không thuộc đối tượng ưu tiên</option>
+                            <option value="1">Đối tượng 1</option>
+                            <option value="2">Đối tượng 2</option>
+                            <option value="3">Đối tượng 3</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4 form-group">
+                        <h4>Điểm môn thứ 1</h4>
+                        <input class="form-control" id="diemMon1" placeholder="Nhập điểm môn thứ 1" />
+                    </div>
+                    <div class="col-md-4 form-group">
+                        <h4>Điểm môn thứ 2</h4>
+                        <input class="form-control" id="diemMon2" placeholder="Nhập điểm môn thứ 2" />
+                    </div>
+                    <div class="col-md-4 form-group">
+                        <h4>Điểm môn thứ 3</h4>
+                        <input class="form-control" id="diemMon3" placeholder="Nhập điểm môn thứ 3" />
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-warning mt-2" id="btnKetQuaB1">Kết quả</button>
+                <div class="alert alert-warning mt-4" id="ketQuaB1"></div>
+            </div>
+        </div>
+        <hr />
+        <!-- BÀI 2: TÍNH TIỀN ĐIỆN -->
+        <div class="card w-30 bg-dark text-white mt-4">
+            <div class="card-header">
+                <h2>BÀI 2: TÍNH TIỀN ĐIỆN</h2>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <h4>Nhập họ tên chủ hộ</h4>
+                    <input class="form-control" id="tenChuHo" placeholder="Nhập họ tên" />
+                </div>
+                <div class="form-group">
+                    <h4>Nhập số KW</h4>
+                    <input class="form-control" id="soKW" placeholder="Nhập số KW" />
+                </div>
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-warning mt-2" id="btnTinhTienDien">Tính tiền</button>
+                <div class="alert alert-warning mt-4" id="ketQuaB2"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
